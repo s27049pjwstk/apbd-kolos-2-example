@@ -1,9 +1,0 @@
-﻿dotnet new tool-manifest
-dotnet tool install dotnet-ef --version 8.0.0
-
--- Code First
-dotnet ef migrations add InitialMigration
-dotnet ef database update
-
--- Database First
-dotnet ef dbcontext scaffold "Data Source=db-mssql;Initial Catalog=s27049;Integrated Security=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --context-dir Context
