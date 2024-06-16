@@ -22,7 +22,7 @@ public class SailboatsDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Data Source=localhost;Initial Catalog=SailboatsDb2;User ID=sa;Password=asd123POKo223;Encrypt=False");
+            "Data Source=db-mssql;Initial Catalog=s27049;Integrated Security=True");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
