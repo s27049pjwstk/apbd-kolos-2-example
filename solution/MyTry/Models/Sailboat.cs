@@ -10,5 +10,5 @@ public class Sailboat {
 
     
     public BoatStandard BoatStandard { get; set; }
-    public ICollection<SailboatReservation> SailboatReservations { get; set; }
+    public ICollection<Reservation> Reservations { get; set; }
 }

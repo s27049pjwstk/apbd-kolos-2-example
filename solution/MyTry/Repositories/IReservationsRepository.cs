@@ -3,5 +3,7 @@
 namespace MyTry.Repositories;
 
 public interface IReservationsRepository {
-    Task<IEnumerable<Reservation>?> GetReservationByClientIdAsync(int idClient, CancellationToken cancellationToken);
+    Task<IEnumerable<Reservation>?> GetClientReservationsAsync(int idClient, CancellationToken cancellationToken);
+
+    Task<bool> CheckClientAnyActiveReservationsAsync(int idClient, CancellationToken cancellationToken);
 }

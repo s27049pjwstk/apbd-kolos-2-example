@@ -13,7 +13,7 @@ public class ClientsService(IClientsRepository clientsRepository, IReservationsR
             throw new ArgumentException("Client does not exist!");
         }
 
-        var reservations = await reservationsRepository.GetReservationByClientIdAsync(idClient, cancellationToken);
+        var reservations = await reservationsRepository.GetClientReservationsAsync(idClient, cancellationToken);
         return new ClientDto {
             IdClient = client.IdClient,
             Name = client.Name,

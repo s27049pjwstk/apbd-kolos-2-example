@@ -17,5 +17,5 @@ public class Reservation {
 
     public Client Client { get; set; }
     public BoatStandard BoatStandard { get; set; }
-    public ICollection<SailboatReservation> SailboatReservations { get; set; }
+    public ICollection<Sailboat> Sailboats { get; set; }
 }
